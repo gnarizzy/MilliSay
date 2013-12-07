@@ -7,3 +7,6 @@ class Post(models.Model):
     upvotes = models.IntegerField(default=0)
     downvotes = models.IntegerField(default=0)
     views = models.IntegerField(default=0)
+    def __unicode__(self):  # Python 3: def __str__(self):
+        return self.title
+
