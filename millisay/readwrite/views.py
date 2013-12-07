@@ -5,6 +5,6 @@ from readwrite.models import Post
 #Displays 10 most recent posts on homepage
 def index(request):
     post_list = Post.objects.order_by('-pub_date')[:10]
-    context = {'post_list': post_list}
+    context = {'posts': post_list}
     return render(request, 'readwrite/index.html',context)
 

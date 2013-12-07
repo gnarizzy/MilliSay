@@ -1,9 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Millisay --Instantly post anonymous essays</title>
+    <title>MilliSay -- Instantly post short, anonymous essays</title>
 </head>
 <body>
-
+    <h1>Most recent Millisays</h1>
+    {% if posts %}
+        <ul>
+            {% for post in posts %}
+                <li>{{ post.title }}</li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <strong> There are no posts to show!</strong>
+    {% endif %}
 </body>
 </html>
