@@ -61,6 +61,15 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="tests.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/readwrite/tests.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="374">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="__init__.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/readwrite/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -79,13 +88,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/readwrite/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="86" selection-start="1042" selection-end="1042" vertical-scroll-proportion="0.6672355" vertical-offset="0" max-vertical-offset="586">
+            <state line="11" column="45" selection-start="472" selection-end="472" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="578">
               <folding>
                 <element signature="e#0#44#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="submit.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/readwrite/submit.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="539">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -116,6 +134,7 @@
         <option value="$PROJECT_DIR$/millisay/settings.py" />
         <option value="$PROJECT_DIR$/readwrite/urls.py" />
         <option value="$PROJECT_DIR$/readwrite/views.py" />
+        <option value="$PROJECT_DIR$/templates/readwrite/submit.html" />
       </list>
     </option>
   </component>
@@ -415,16 +434,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/readwrite/__init__.py">
+    <entry file="file://$PROJECT_DIR$/readwrite/tests.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="586">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/readwrite/post.html">
+    <entry file="file://$PROJECT_DIR$/readwrite/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="19" selection-start="84" selection-end="84" vertical-scroll-proportion="-3.9230769" vertical-offset="0" max-vertical-offset="238">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="586">
           <folding />
         </state>
       </provider>
@@ -436,6 +455,15 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/readwrite/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="45" selection-start="472" selection-end="472" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="578">
+          <folding>
+            <element signature="e#0#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/readwrite/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="45" selection-start="75" selection-end="75" vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="391">
@@ -443,12 +471,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/readwrite/views.py">
+    <entry file="file://$PROJECT_DIR$/templates/readwrite/post.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="86" selection-start="1042" selection-end="1042" vertical-scroll-proportion="0.6672355" vertical-offset="0" max-vertical-offset="586">
-          <folding>
-            <element signature="e#0#44#0" expanded="true" />
-          </folding>
+        <state line="6" column="19" selection-start="84" selection-end="84" vertical-scroll-proportion="-3.9230769" vertical-offset="0" max-vertical-offset="238">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/readwrite/submit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="565">
+          <folding />
         </state>
       </provider>
     </entry>

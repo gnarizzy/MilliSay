@@ -6,7 +6,7 @@ from readwrite.models import Post
 def index(request):
     post_list = Post.objects.order_by('-pub_date')[:10]
     context = {'posts': post_list}
-    return render(request, 'readwrite/index.html',context)
+    return render(request, 'readwrite/index.html', context)
 #Displays the requested post, or a 404 page
 def post_detail(request, postid):
     post = get_object_or_404(Post, pk=postid)
@@ -21,7 +21,7 @@ def submit_post(request):
             #add new post to database, then redirect to it
     else:
         form = SubmitForm()
-    return render(request, 'submit.html',{'form':form,}) #create submit.html templates
+    return render(request, 'readwrite/submit.html',{'form':form,}) #create submit.html templates
 
 
 
