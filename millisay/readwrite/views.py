@@ -13,12 +13,14 @@ def post_detail(request, postid):
     return render(request, 'readwrite/post.html',{'post':post})
 #Allows user to submit post, then redirects to post page if post is successful
 def submit_post(request):
+
     if request.method == 'POST':
-        form = SubmitForm(request.POST) #create SubmitForm
+        form = PostForm(request.POST)
         if form.is_valid():
-            title = form.cleaned_data['title']
-            content = form.cleaned_data['content']
-            #add new post to database, then redirect to it
+            form.save(commit=True)
+            count = Post.objects.count() #Check database API to make sure this is valid
+            post_detail(request, count) #redirects to the post the user just submitted
+
     else:
         form = SubmitForm()
     return render(request, 'readwrite/submit.html',{'form':form,}) #create submit.html templates
