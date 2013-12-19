@@ -18,9 +18,9 @@ def submit_post(request):
         form = PostForm(request.POST)
         if form.is_valid():
             form.save(commit=True)
-            count = Post.objects.count() #Check database API to make sure this is valid
-            post_detail(request, count) #redirects to the post the user just submitted
-
+            count = Post.objects.count() 
+            url = '/post/' + str(count)
+            return HttpResponseRedirect(url)
     else:
         form = PostForm()
     return render(request, 'readwrite/submit.html',{'form':form,}) #create submit.html template
