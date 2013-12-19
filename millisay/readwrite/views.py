@@ -18,7 +18,7 @@ def submit_post(request):
         form = PostForm(request.POST)
         if form.is_valid():
             form.save(commit=True)
-            count = Post.objects.count() 
+            count = Post.objects.count()
             url = '/post/' + str(count)
             return HttpResponseRedirect(url)
     else:
