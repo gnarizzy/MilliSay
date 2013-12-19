@@ -4,6 +4,15 @@
     <title>Submit a post</title>
 </head>
 <body>
-
+<h1>Submit a post</h1>
+<form id="submit_form" method="post" action="/submit/">
+    {% csrf_token %}
+    {% for field in form.visible_fields %}
+        {{ field.errors }}
+        {{ field.help_text }}
+        {{ field }}
+    {% endfor %}
+    <input type="submit" name="submit" value="Create Post"/>
+</form>
 </body>
 </html>
