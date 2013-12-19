@@ -23,7 +23,7 @@ def submit_post(request):
 
     else:
         form = PostForm()
-    return render(request, 'readwrite/submit.html',{'form':form,}) #create submit.html templates
+    return render(request, 'readwrite/submit.html',{'form':form,}) #create submit.html template
 
 
 
