@@ -4,7 +4,7 @@
     <title>MilliSay -- Instantly post short, anonymous essays</title>
 </head>
 <body>
-    <h1>Most recent Millisays</h1>
+    <h1>Most recent MilliSays</h1>
     {% if posts %}
         <ul>
             {% for post in posts %}
@@ -14,5 +14,6 @@
     {% else %}
         <strong> There are no posts to show!</strong>
     {% endif %}
+    <a href="/submit"/><h2>Instantly submit your own MilliSay</h2>
 </body>
 </html>

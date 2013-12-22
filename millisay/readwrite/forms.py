@@ -2,8 +2,8 @@ from django import forms
 from readwrite.models import Post
 
 class PostForm(forms.ModelForm):
-    title = forms.CharField(max_length=200, help_text="Please enter a title.")
-    content = forms.CharField(widget=forms.Textarea, help_text="Please enter your post's content.")
+    title = forms.CharField(widget=forms.TextInput(attrs={'class':'form-control'}),max_length=200, help_text="Title")
+    content = forms.CharField(widget=forms.Textarea(attrs={'class':'form-control'}), help_text="Content")
 
     class Meta:
         model = Post
