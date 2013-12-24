@@ -32,19 +32,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/readwrite/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="17" selection-start="17" selection-end="17" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="544">
+            <state line="0" column="17" selection-start="17" selection-end="17" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="476">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="views.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/readwrite/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="44" selection-start="938" selection-end="938" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="561">
+            <state line="7" column="54" selection-start="289" selection-end="289" vertical-scroll-proportion="0.11929824" vertical-offset="0" max-vertical-offset="570">
               <folding />
             </state>
           </provider>
@@ -108,7 +108,6 @@
         <option value="$PROJECT_DIR$/readwrite/urls.py" />
         <option value="$PROJECT_DIR$/readwrite/urls2.py" />
         <option value="$PROJECT_DIR$/readwrite/models.py" />
-        <option value="$PROJECT_DIR$/readwrite/views.py" />
         <option value="$PROJECT_DIR$/millisay/urls.py" />
         <option value="$PROJECT_DIR$/readwrite/admin.py" />
         <option value="$PROJECT_DIR$/millisay/settings.py" />
@@ -117,6 +116,7 @@
         <option value="$PROJECT_DIR$/templates/readwrite/submit.html" />
         <option value="$PROJECT_DIR$/static/css/styles.css" />
         <option value="$PROJECT_DIR$/templates/readwrite/index.html" />
+        <option value="$PROJECT_DIR$/readwrite/views.py" />
       </list>
     </option>
   </component>
@@ -521,13 +521,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/readwrite/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="44" selection-start="938" selection-end="938" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/readwrite/submit.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="17" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="493">
@@ -538,6 +531,13 @@
     <entry file="file://$PROJECT_DIR$/templates/readwrite/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="17" selection-start="17" selection-end="17" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="544">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readwrite/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="54" selection-start="289" selection-end="289" vertical-scroll-proportion="0.11929824" vertical-offset="0" max-vertical-offset="570">
           <folding />
         </state>
       </provider>
