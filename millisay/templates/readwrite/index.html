@@ -1,6 +1,5 @@
 {% load static %}
 <!DOCTYPE html>
-<html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="{% static 'css/bootstrap.min.css'% }" rel="stylesheet" media="screen">
@@ -8,7 +7,8 @@
     <title>MilliSay -- Instantly post short, anonymous essays</title>
 </head>
 <body>
-    <h1>Most recent MilliSays</h1>
+
+<h1>Most recent MilliSays</h1>
     {% if posts %}
         <ul>
             {% for post in posts %}
@@ -18,6 +18,14 @@
     {% else %}
         <strong> There are no posts to show!</strong>
     {% endif %}
+
     <a href="/submit"/><h2>Instantly submit your own MilliSay</h2>
+
+   <!--
+    <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.js' %}"></script>
+-->
+
 </body>
 </html>
