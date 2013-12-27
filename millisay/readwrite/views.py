@@ -4,7 +4,7 @@ from readwrite.models import Post
 from readwrite.forms import PostForm
 import re
 
-#Displays 10 most recent posts on homepage
+#Displays 30 most recent posts on homepage
 def index(request):
     post_list = Post.objects.order_by('-pub_date')[:30]
     context = {'posts': post_list}
@@ -28,7 +28,7 @@ def submit_post(request):
         #Do word count on front end
     else:
         form = PostForm()
-    return render(request, 'readwrite/submit.html',{'form':form,}) #create submit.html template
+    return render(request, 'readwrite/submit.html',{'form':form,})
 
 
 
