@@ -2,6 +2,7 @@ from django.http import HttpResponseRedirect
 from django.shortcuts import render, get_object_or_404
 from readwrite.models import Post
 from readwrite.forms import PostForm
+import re
 
 #Displays 10 most recent posts on homepage
 def index(request):
@@ -19,6 +20,9 @@ def submit_post(request):
         if form.is_valid():
             form.save(commit=True)
             count = Post.objects.count()
+            post = get_object_or_404(Post, pk=count)
+            length = len(re.findall(r'\w+', post.content))
+            Post.objects.filter(pk=count).update(words=length)
             url = '/post/' + str(count)
             return HttpResponseRedirect(url)
         #Do word count so it can be displayed on each post

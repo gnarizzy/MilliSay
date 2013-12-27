@@ -41,11 +41,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="views.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/readwrite/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="12" selection-start="951" selection-end="951" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="578">
-              <folding />
+            <state line="24" column="62" selection-start="1038" selection-end="1038" vertical-scroll-proportion="0.69624573" vertical-offset="0" max-vertical-offset="697">
+              <folding>
+                <element signature="e#0#44#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -68,10 +70,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="post.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="post.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/readwrite/post.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="66" selection-start="695" selection-end="695" vertical-scroll-proportion="0.51428574" vertical-offset="1" max-vertical-offset="663">
+            <state line="17" column="66" selection-start="695" selection-end="695" vertical-scroll-proportion="-11.076923" vertical-offset="1" max-vertical-offset="663">
               <folding />
             </state>
           </provider>
@@ -115,8 +117,8 @@
         <option value="$PROJECT_DIR$/static/css/styles.css" />
         <option value="$PROJECT_DIR$/templates/readwrite/index.html" />
         <option value="$PROJECT_DIR$/readwrite/models.py" />
-        <option value="$PROJECT_DIR$/readwrite/views.py" />
         <option value="$PROJECT_DIR$/templates/readwrite/post.html" />
+        <option value="$PROJECT_DIR$/readwrite/views.py" />
       </list>
     </option>
   </component>
@@ -502,9 +504,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/readwrite/index.html">
+    <entry file="file://$PROJECT_DIR$/readwrite/forms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="3" selection-start="925" selection-end="925" vertical-scroll-proportion="-17.653847" vertical-offset="0" max-vertical-offset="612">
+        <state line="10" column="0" selection-start="393" selection-end="393" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
           <folding />
         </state>
       </provider>
@@ -516,6 +518,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/readwrite/post.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="66" selection-start="695" selection-end="695" vertical-scroll-proportion="-11.076923" vertical-offset="1" max-vertical-offset="663">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/readwrite/submit.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="21" column="0" selection-start="701" selection-end="708" vertical-scroll-proportion="-13.730769" vertical-offset="0" max-vertical-offset="493">
@@ -523,24 +532,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/readwrite/forms.py">
+    <entry file="file://$PROJECT_DIR$/templates/readwrite/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="393" selection-end="393" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
+        <state line="27" column="3" selection-start="925" selection-end="925" vertical-scroll-proportion="-17.653847" vertical-offset="0" max-vertical-offset="612">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/readwrite/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="12" selection-start="951" selection-end="951" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="578">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/readwrite/post.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="66" selection-start="695" selection-end="695" vertical-scroll-proportion="0.51428574" vertical-offset="1" max-vertical-offset="663">
-          <folding />
+        <state line="24" column="62" selection-start="1038" selection-end="1038" vertical-scroll-proportion="0.69624573" vertical-offset="0" max-vertical-offset="697">
+          <folding>
+            <element signature="e#0#44#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
