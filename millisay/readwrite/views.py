@@ -25,7 +25,7 @@ def submit_post(request):
             Post.objects.filter(pk=count).update(words=length)
             url = '/post/' + str(count)
             return HttpResponseRedirect(url)
-        #Do word count so it can be displayed on each post
+        #Do word count on front end
     else:
         form = PostForm()
     return render(request, 'readwrite/submit.html',{'form':form,}) #create submit.html template
