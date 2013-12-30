@@ -11,9 +11,10 @@
 <div class = "navbar navbar-inverse navbar-static-top">
         <div class = "container">
             <a href="/" class = "navbar-brand">MilliSay</a>
-            <div class="collapse navbar-collapse" id="navigation-bar">
+
+            <div class="collapse navbar-collapse navigation-bar">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="/">New</a></li>
+                    <li><a href="/">New</a></li>
                      <li><a href="/submit">Submit</a></li>
             </div>
         </div>
@@ -31,5 +32,8 @@
     {% endfor %}
     <input type="submit" class="btn btn-default" name="submit" value="Create MilliSay"/>
 </form>
+ <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+ <script src="{% static 'js/bootstrap.min.js' %}"></script>
+ <script src="{% static 'js/bootstrap.js' %}"></script>
 </body>
 </html>

@@ -1,5 +1,7 @@
 {
-  "vars": {},
+  "vars": {
+    "@grid-float-breakpoint": "480px"
+  },
   "css": [
     "print.less",
     "type.less",
