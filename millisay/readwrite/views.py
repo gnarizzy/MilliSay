@@ -4,9 +4,9 @@ from readwrite.models import Post
 from readwrite.forms import PostForm
 import re
 
-#Displays 30 most recent posts on homepage
+#Displays 20 most recent posts on homepage
 def index(request):
-    post_list = Post.objects.order_by('-pub_date')[:30]
+    post_list = Post.objects.order_by('-pub_date')[:20]
     context = {'posts': post_list}
     return render(request, 'readwrite/index.html', context)
 #Displays the requested post, or a 404 page

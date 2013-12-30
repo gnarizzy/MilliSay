@@ -14,6 +14,7 @@
                 <ul class="nav navbar-nav">
                     <li><a href="/">New</a></li>
                     <li><a href="/submit">Submit</a></li>
+                 </ul>
             </div>
         </div>
 
@@ -22,19 +23,25 @@
 <div class="list-group">
     {% if posts %}
          {% for post in posts %}
-              <a href="/post/{{post.id}}" class="list-group-item"/>{{ post.title }}</li>
+              <a href="/post/{{post.id}}" class="list-group-item">{{ post.title }}</a></li>
          {% endfor %}
 </div>
     {% else %}
         <strong> There are no posts to show!</strong>
     {% endif %}
 
-    <a href="/submit"/><h2>Instantly submit your own MilliSay</h2>
+<div class="navbar navbar-inverse navbar-static-bottom">
+    <div class="container">
+        <a href="/post/1" class = "navbar-text pull-left">About</a>
+        <a href="/post/2" class = "navbar-text pull-left">Terms of Use</a>
+        <a href="/post/3" class = "navbar-text pull-left">Contact</a>
+    </div>
+    </div>
+</div>
 
-
-    <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
-    <script src="{% static 'js/bootstrap.min.js' %}"></script>
-    <script src="{% static 'js/bootstrap.js' %}"></script>
+<script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.js' %}"></script>
 
 
 </body>

@@ -15,7 +15,8 @@
             <div class="collapse navbar-collapse" id="navigation-bar">
                 <ul class="nav navbar-nav">
                     <li><a href="/">New</a></li>
-                     <li><a href="/submit">Submit</a></li>
+                    <li><a href="/submit">Submit</a></li>
+                </ul>
             </div>
         </div>
 
@@ -29,13 +30,22 @@
                         <h1>{{ post.title }}<small> {{post.words}} words</small></h1>
                         <br>
                         <p>{{ post.content|linebreaks }}</p>
+                        <br>
+                        <p><small>Published {{ post.pub_date }}</small></p>
                     </div>
                   </div>
               </div>
           </div>
         </div>
     </div>
-
+<div class="navbar navbar-inverse navbar-static-bottom">
+    <div class="container">
+        <a href="/post/1" class = "navbar-text pull-left">About</a>
+        <a href="/post/2" class = "navbar-text pull-left">Terms of Use</a>
+        <a href="/post/3" class = "navbar-text pull-left">Contact</a>
+        </div>
+    </div>
+</div>
     <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
     <script src="{% static 'js/bootstrap.min.js' %}"></script>
     <script src="{% static 'js/bootstrap.js' %}"></script>
