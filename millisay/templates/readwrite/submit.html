@@ -23,6 +23,9 @@
 <h1>Submit a MilliSay</h1>
 <form id="submit_form" method="post" action="/submit/">
     {% csrf_token %}
+    {% for hidden in form.hidden_fields %}
+         {{ hidden }}
+    {% endfor %}
     {% for field in form.visible_fields %}
     <div class="form-group">
         {{ field.errors }}
