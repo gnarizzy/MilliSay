@@ -6,7 +6,7 @@ import re
 
 #Displays 20 most recent posts on homepage
 def index(request):
-    post_list = Post.objects.order_by('-pub_date')[:20]
+    post_list = Post.objects.order_by('-pk')[:20]
     context = {'posts': post_list}
     return render(request, 'readwrite/index.html', context)
 #Displays the requested post, or a 404 page
@@ -22,7 +22,6 @@ def submit_post(request):
             post = Post.objects.order_by('-pk')[0]
             length = len(re.findall(r'\w+', post.content))
             Post.objects.filter(pk=post.pk).update(words=length)
-            #Post.objects.filter(pk=count).update(words=length)
             url = '/post/' + str(post.pk)
             return HttpResponseRedirect(url)
         #Do word count on front end
