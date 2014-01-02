@@ -19,11 +19,11 @@ def submit_post(request):
         form = PostForm(request.POST)
         if form.is_valid():
             form.save(commit=True)
-            count = Post.objects.count()
-            post = get_object_or_404(Post, pk=count)
+            post = Post.objects.order_by('-pk')[0]
             length = len(re.findall(r'\w+', post.content))
-            Post.objects.filter(pk=count).update(words=length)
-            url = '/post/' + str(count)
+            Post.objects.filter(pk=post.pk).update(words=length)
+            #Post.objects.filter(pk=count).update(words=length)
+            url = '/post/' + str(post.pk)
             return HttpResponseRedirect(url)
         #Do word count on front end
     else:
