@@ -6,7 +6,7 @@ import re
 
 #Displays 20 most recent posts on homepage
 def index(request):
-    post_list = Post.objects.order_by('-pk')[:20]
+    post_list = Post.objects.order_by('-pk')[:15]
     context = {'posts': post_list}
     return render(request, 'readwrite/index.html', context)
 #Displays the requested post, or a 404 page
