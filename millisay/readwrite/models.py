@@ -9,6 +9,7 @@ class Post(models.Model):
     downvotes = models.IntegerField(default=0)
     views = models.IntegerField(default=0)
     words = models.IntegerField(default=0)
+    is_top = models.BooleanField(default=False)
     def __unicode__(self):  # Python 3: def __str__(self):
         return self.title
 
