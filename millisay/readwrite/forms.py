@@ -1,8 +1,6 @@
 from django import forms
 import datetime
 from readwrite.models import Post
-from django.core.exceptions import ValidationError
-import re
 
 class PostForm(forms.ModelForm):
     title = forms.CharField(widget=forms.TextInput(attrs={'class':'form-control'}),max_length=200, help_text="Title")

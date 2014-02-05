@@ -2,7 +2,6 @@ from django.http import HttpResponseRedirect
 from django.shortcuts import render, get_object_or_404
 from readwrite.models import Post
 from readwrite.forms import PostForm
-import re
 
 #Displays 20 most recent posts on homepage
 def index(request):
