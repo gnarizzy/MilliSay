@@ -3,11 +3,16 @@ from django.shortcuts import render, get_object_or_404
 from readwrite.models import Post
 from readwrite.forms import PostForm
 
-#Displays 20 most recent posts on homepage
+#Displays 20 most recent top posts on homepage. Change to index once everything works
 def index(request):
-    post_list = Post.objects.order_by('-pk')[:20]
+    post_list = Post.objects.filter(is_top=True).order_by('-pk')[:20]
     context = {'posts': post_list}
     return render(request, 'readwrite/index.html', context)
+#Displays 20 most recent posts on homepage
+def new(request):
+    post_list = Post.objects.order_by('-pk')[:20]
+    context = {'posts': post_list}
+    return render(request, 'readwrite/new.html', context)
 #Displays the requested post, or a 404 page
 def post_detail(request, postid):
     post = get_object_or_404(Post, pk=postid)
