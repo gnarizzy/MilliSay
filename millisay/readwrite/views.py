@@ -6,7 +6,7 @@ import re
 
 #Displays 20 most recent posts on homepage
 def index(request):
-    post_list = Post.objects.order_by('-pk')[:15]
+    post_list = Post.objects.order_by('-pk')[:50]
     context = {'posts': post_list}
     return render(request, 'readwrite/index.html', context)
 #Displays the requested post, or a 404 page
@@ -20,7 +20,7 @@ def submit_post(request):
         if form.is_valid():
             form.save(commit=True)
             post = Post.objects.order_by('-pk')[0]
-            length = len(re.findall(r'\w+', post.content))
+            length = len(post.content.split())
             Post.objects.filter(pk=post.pk).update(words=length)
             url = '/post/' + str(post.pk)
             return HttpResponseRedirect(url)
