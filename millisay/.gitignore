@@ -2,4 +2,4 @@ millisay.db
 
 *.pyc
 settings.py
-millisay/readwrite/migrations/
+millisay/readwrite/migrations/*
