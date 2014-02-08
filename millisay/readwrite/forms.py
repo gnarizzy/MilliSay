@@ -1,6 +1,7 @@
 from django import forms
 import datetime
 from readwrite.models import Post
+from readwrite.dictionary import Dictionary
 
 class PostForm(forms.ModelForm):
     title = forms.CharField(widget=forms.TextInput(attrs={'class':'form-control'}),max_length=200, help_text="Title")
@@ -11,7 +12,11 @@ class PostForm(forms.ModelForm):
 #Prevents junk posts
     def clean_content(self):
         content = self.cleaned_data['content']
-        length = len(content.split())
+        words = content.split()
+        length = 0
+        for word in words:
+            if word in Dictionary.words:
+                length += 1
         if length < 7:
             raise forms.ValidationError("It looks like you're trying to post junk. Please don't do that.")
         return content
