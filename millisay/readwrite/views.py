@@ -8,15 +8,29 @@ def index(request):
     post_list = Post.objects.filter(is_top=True).order_by('-pk')[:20]
     context = {'posts': post_list}
     return render(request, 'readwrite/index.html', context)
+
 #Displays 20 most recent posts on homepage
 def new(request):
     post_list = Post.objects.order_by('-pk')[:20]
     context = {'posts': post_list}
     return render(request, 'readwrite/new.html', context)
+
 #Displays the requested post, or a 404 page
 def post_detail(request, postid):
     post = get_object_or_404(Post, pk=postid)
-    return render(request, 'readwrite/post.html',{'post':post})
+    previous = 1
+    next = 1
+    try: #fetch previous post to link on requested post page, or go to about page
+        previous = post.get_previous_by_pub_date().id
+    except:
+        pass
+    try: #fetch next post to link on request post page, or go to about page
+        next = post.get_next_by_pub_date().id
+    except:
+        pass
+    context = {'post': post,'previous':previous,'next':next}
+    return render(request, 'readwrite/post.html',context)
+
 #Allows user to submit post, then redirects to post page if post is successful
 def submit_post(request):
     if request.method == 'POST':

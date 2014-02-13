@@ -6,7 +6,7 @@
     <link href="{% static 'css/bootstrap.min.css'% }" rel="stylesheet" media="screen">
     <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
     <link href="{% static 'css/styles.css' %}" rel="stylesheet">
-    <title>{{ post.title }}</title>
+    <title>{{ posts.1.title }}</title>
 </head>
 <body>
     <div class = "navbar navbar-inverse navbar-static-top">
@@ -32,6 +32,9 @@
                         <p>{{ post.content|linebreaks }}</p>
                         <br>
                      <!--<p><small>Published {{ post.pub_date }}</small></p>-->
+                        <div class = "text-center">
+                             <p><small><a href="/post/{{ previous }}">Previous</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;. <a href="/post/{{ next }}">Next</a></small></p>
+                        </div>
                     </div>
                   </div>
               </div>
