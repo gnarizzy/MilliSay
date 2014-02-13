@@ -20,10 +20,10 @@ def post_detail(request, postid):
     post = get_object_or_404(Post, pk=postid)
     previous = 1
     next = 1
-    try: #fetch previous post to link on requested post page, or go to about page
+    try: #fetch previous post to link on requested post page, or go to most recent post
         previous = post.get_previous_by_pub_date().id
     except:
-        pass
+        previous = Post.objects.latest('id').id
     try: #fetch next post to link on request post page, or go to about page
         next = post.get_next_by_pub_date().id
     except:
