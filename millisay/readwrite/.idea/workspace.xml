@@ -77,19 +77,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="42" selection-start="999" selection-end="999" vertical-scroll-proportion="0.6837294" vertical-offset="0" max-vertical-offset="935">
+            <state line="25" column="42" selection-start="999" selection-end="999" vertical-scroll-proportion="0.0" vertical-offset="388" max-vertical-offset="935">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="post.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="post.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../templates/readwrite/post.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="132" selection-start="1548" selection-end="1548" vertical-scroll-proportion="-9.153846" vertical-offset="357" max-vertical-offset="1037">
+            <state line="35" column="130" selection-start="1546" selection-end="1546" vertical-scroll-proportion="0.23031496" vertical-offset="478" max-vertical-offset="1037">
               <folding />
             </state>
           </provider>
@@ -125,8 +125,8 @@
         <option value="$PROJECT_DIR$/../templates/readwrite/new.html" />
         <option value="$PROJECT_DIR$/dictionary.py" />
         <option value="$PROJECT_DIR$/forms.py" />
-        <option value="$PROJECT_DIR$/../templates/readwrite/post.html" />
         <option value="$PROJECT_DIR$/views.py" />
+        <option value="$PROJECT_DIR$/../templates/readwrite/post.html" />
       </list>
     </option>
   </component>
@@ -444,16 +444,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../templates/readwrite/post.html">
+    <entry file="file://$PROJECT_DIR$/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="132" selection-start="1548" selection-end="1548" vertical-scroll-proportion="-9.153846" vertical-offset="357" max-vertical-offset="1037">
+        <state line="25" column="42" selection-start="999" selection-end="999" vertical-scroll-proportion="0.0" vertical-offset="388" max-vertical-offset="935">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views.py">
+    <entry file="file://$PROJECT_DIR$/../templates/readwrite/post.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="42" selection-start="999" selection-end="999" vertical-scroll-proportion="0.6837294" vertical-offset="0" max-vertical-offset="935">
+        <state line="35" column="130" selection-start="1546" selection-end="1546" vertical-scroll-proportion="0.23031496" vertical-offset="478" max-vertical-offset="1037">
           <folding />
         </state>
       </provider>
