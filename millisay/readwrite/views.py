@@ -1,7 +1,17 @@
 from django.http import HttpResponseRedirect
+from django.http import HttpResponse
 from django.shortcuts import render, get_object_or_404
 from readwrite.models import Post
 from readwrite.forms import PostForm
+from readwrite.serializers import PostSerializer
+from rest_framework.renderers import JSONRenderer
+
+class JSONResponse(HttpResponse):
+
+    def __init__(self, data, **kwargs):
+        content = JSONRenderer().render(data)
+        kwargs['content_type'] = 'application/json'
+        super(JSONResponse, self).__init__(content, **kwargs)
 
 #Displays 20 most recent top posts on homepage. Change to index once everything works
 def index(request):
@@ -46,6 +56,13 @@ def submit_post(request):
     else:
         form = PostForm()
     return render(request, 'readwrite/submit.html',{'form':form,})
+
+#Returns JSON of 20 most recent posts list. Part of rest API. Eventually expand to take parameters
+def post_list(request):
+    if request.method == 'GET':
+        post_list = Post.objects.order_by('-pk')[:20]
+        serializer = PostSerializer(post_list, many=True)
+        return JSONResponse(serializer.data)
 
 
 
